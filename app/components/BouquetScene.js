@@ -132,8 +132,7 @@ function Bouquet({ shape, palette, size }) {
       });
     }
     return list;
-  // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [shape, palette, size]);
+  }, [shape, colors]);
 
   /* generate leaf positions */
   const leaves = useMemo(() => {
