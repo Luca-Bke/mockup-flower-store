@@ -26,6 +26,8 @@ ENV PORT=3000
 # Next.js standalone output
 COPY --from=builder /app/.next/standalone ./
 COPY --from=builder /app/.next/static ./.next/static
+# Copy public assets (directory may be empty for a minimal Hello World setup)
+RUN mkdir -p public
 COPY --from=builder /app/public ./public
 
 EXPOSE 3000
