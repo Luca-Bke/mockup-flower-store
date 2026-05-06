@@ -1,11 +1,13 @@
+import './globals.css';
+
 export const metadata = {
-  title: 'Mockup Flower Store',
-  description: 'Hello World – built with Next.js & React',
+  title: 'Blumen Nolte – Strauß Konfigurator',
+  description: '3D Blumenstrauß-Konfigurator für Blumen Nolte',
 };
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
+    <html lang="de">
       <body>{children}</body>
     </html>
   );
